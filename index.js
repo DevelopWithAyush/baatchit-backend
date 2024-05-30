@@ -14,9 +14,9 @@ const io = new Server(server,{
     }
 })
 
-app.get("/",(req,res)=>{
-    res.send("hello from this side")
-})
+app.get("/", (req, res) => {
+    res.json({ message: "hello from this side" });
+});
 
 
 io.on("connection",(socket)=>{ //io bole to socket ka pura server jaha pe pura data aa ja raha hai
