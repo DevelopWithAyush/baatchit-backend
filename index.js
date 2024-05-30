@@ -8,14 +8,14 @@ import cors from "cors"
 const users = [{}];
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://baatchit-frontend.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
 });
 
 app.use(cors({
-  origin: "http://localhost:3000"
+  origin: "https://baatchit-frontend.vercel.app"
 }));
 
 
